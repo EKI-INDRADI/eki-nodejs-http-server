@@ -1,0 +1,27 @@
+{
+  "name": "eki-nodejs-http-server",
+  "version": "1.0.0",
+  "description": "EKI INDRADI, MULTI FRONTEND FOR TEST MICROFRONTEND",
+  "main": "index.js",
+  "scripts": {
+    "start:vanila": "node ./nodejs_vanila_3001",
+    "start:http": "http-server -p 3002"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EKI-INDRADI/eki-nodejs-http-server.git"
+  },
+  "keywords": [
+    "EKI",
+    "INDRADI"
+  ],
+  "author": "EKI INDRADI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EKI-INDRADI/eki-nodejs-http-server/issues"
+  },
+  "homepage": "https://github.com/EKI-INDRADI/eki-nodejs-http-server#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
