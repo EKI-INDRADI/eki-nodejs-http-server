@@ -37,13 +37,17 @@ Pertama, kita memuat modul Node.js http dan fs untuk menangani permintaan HTTP d
 
 Kemudian, kita membuat server HTTP dengan createServer() method dan menentukan callback function untuk menangani permintaan masuk.
 
-Di dalam callback function, kita memeriksa apakah permintaan masuk adalah permintaan untuk halaman utama (biasanya index.html). Jika ya, kita membaca file index.html menggunakan fs.readFile() method. Jika file tidak ditemukan, kita merespon dengan kode status 
+Di dalam callback function, kita memeriksa apakah permintaan masuk adalah permintaan untuk halaman utama (biasanya index.html). 
 
-404. Jika file berhasil dibaca, kita merespon dengan kode status 200 dan mengirimkan konten HTML menggunakan res.end() method.
+Jika ya, kita membaca file index.html menggunakan fs.readFile() method. Jika file tidak ditemukan, kita merespon dengan kode status 404.
+
+Jika file berhasil dibaca, kita merespon dengan kode status 200 dan mengirimkan konten HTML menggunakan res.end() method.
 
 Jika permintaan bukan untuk halaman utama, kita merespon dengan kode status 404 dan pesan error "Page not found".
 
-Akhirnya, kita memanggil method listen() untuk memulai server dan menentukan port yang akan digunakan (di sini kita menggunakan port 3000). Kita juga mencetak pesan ke konsol bahwa server telah dimulai.
+Akhirnya, kita memanggil method listen() untuk memulai server dan menentukan port yang akan digunakan (di sini kita menggunakan port 3000). 
+
+Kita juga mencetak pesan ke konsol bahwa server telah dimulai.
 
 
 
